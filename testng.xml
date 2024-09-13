@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+    
+    <!-- Test for Windows 10 with Chrome -->
+    <test name="Windows_Chrome">
+        <parameter name="remote" value="false" />
+        <parameter name="browser" value="chrome" />
+        <parameter name="version" value="latest" />
+        <parameter name="platform" value="Windows 10" />
+        <parameter name="width" value="1920" />
+        <parameter name="height" value="1080" />
+        <classes>
+            <class name="TestDemo.FormDemo"/>
+        </classes>
+    </test>
+
+    <!-- Test for macOS Catalina with Safari 
+    <test name="macOS_webkit">
+        <parameter name="remote" value="false" />
+        <parameter name="browser" value="pw-webkit" />
+        <parameter name="version" value="latest" />
+        <parameter name="platform" value="macOS Big sur" />
+        <parameter name="width" value="1920" />
+        <parameter name="height" value="1080" />
+        <classes>
+            <class name="TestDemo.FormDemo"/>
+            <class name="TestDemo.FormPageTest" />
+            <class name="TestDemo.SliderPageTest" />
+        </classes>
+    </test>-->
+
+</suite>
